@@ -1,0 +1,179 @@
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title>HTML CSS exercises</title>
+<style type="text/css">
+nav{
+  float: right;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  color: #00bfff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+#form {
+  width: 40%;
+  margin: 0px auto;
+  border-radius: 5px 5px 5px 5px;
+  border: 1px groove #e0e0d1;
+}
+#form h3{
+  padding: 10px 20px;
+  display: block;
+  margin:0px;
+  background-color: #cccccc;
+  color: white;
+}
+
+#form div{
+  width: 90%;
+  margin: 0px auto;
+}
+
+#form input{
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+}
+
+#form span{
+  font-size: 12;
+}
+#form select{
+  border-radius: 5px 5px 5px 5px;
+  width: 100%;
+  background-color: #34b292;
+  color: white;
+}
+
+#form input.dec {
+  height: 50px;
+}
+
+#form input.vers{
+  width: 100px;
+}
+
+#form input.rad{
+  width: 12px;
+  margin: 0px;
+}
+
+#form input.send{
+  color: white;
+  background-color: #34b292;
+  width: max-content;
+  margin-left: 92%;
+  margin-bottom: 2%;
+}
+
+
+
+#form input.inputfile {
+  opacity: 0;
+  position: absolute;
+}
+
+.spanf{
+  border-radius: 5px 0px 0px 5px;
+  padding: 3px;
+  width: 78%;
+  border : 2px solid #d9d9d9;
+  display: inline-block;
+}
+
+.spans{
+  color: white;
+  background-color: #d9d9d9;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
+
+}
+
+</style>
+        </head>
+        <body>
+               <header>
+                <ul style="float: left;">
+                  <li>
+                    <a href="#"><h2 style="margin-bottom: 0px;margin-top: 0px;">TO THE NEW</h2></a>
+                  </li>
+                </ul>
+                <nav>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quick He</a></li>
+                  </ul>
+                </nav>
+                <hr style="clear: left;" />
+               </header>
+
+               <section style="clear: left;">
+                <form id="form">
+                  <h3>Bug Report</h3>
+                  <div>
+                    <span>Title:*</span>
+                    <br/>
+                    <input type="textbox" name="title" required>
+                    <br/>
+                    <span>Description:*</span>
+                    <input type="textbox" name="description" class="dec" required>
+                    <span>Operating System:</span>
+                    <select name="selOS">
+                      <option value="win-xp" selected>Windows XP</option>
+                      <option value="linux">Linux</option>
+                      <option value="mac-os">Mac OS X</option>
+                    </select>
+                    <span>Product:*</span>
+                    <select name="product" required>
+                      <option value="Formoid" selected>Formoid</option>
+                      <option value="mobaileapp">Mobile Application</option>
+                      <option value="systemapp">System Application</option>
+                    </select>
+                    <span>Version:*</span>
+                    <br/>
+                    <input type="textbox" name="version" class="vers" required>
+                    <br/>
+                    <span>License:</span><br/>
+                    <input type="radio" name="license" class="rad">
+                    <span>Free</span>
+                    <input type="radio" name="license" class="rad">
+                    <span>Business</span>
+                    <br/>
+                    <span>Saverity:*</span>
+                    <br/>
+                    <select name="selSaverity">
+                      <option value="c" selected>Critical</option>
+                      <option value="m">Moderate</option>
+                      <option value="l">Low</option>
+                    </select>
+                    <span>Attachments:</span>
+                    <br/>
+                    <input type="file" name="file" id="file" class="inputfile" />
+                    <label for="file"><span class="spanf">No file selected</span><span class="spans">Choose a file</span></label>
+                    <hr/>
+                    <div class="btn">
+                      <input type="submit" name="btn" value="Send" class="send">
+                    </div>
+                    
+                  </div>
+                </form>
+               </section> 
+        </body>
+</html>
